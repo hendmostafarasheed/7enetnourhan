@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4b0738">
+  <title>دعوة حنة نورهان</title>
+  <link rel="stylesheet" href="style_v2.css">
+</head>
+<body>
+  <main class="invitation">
+    <section class="page page-one" id="pageOne" aria-label="الصفحة الأولى">
+      <div class="art-frame">
+        <img class="art page-one-art" src="page1_v2.gif" alt="فانوس وحنة وزخارف بنفسجية وذهبية">
+        <button class="open-invite" id="openInvite" type="button">فتح دعوة الحنة</button>
+      </div>
+    </section>
+
+    <section class="page page-two hidden" id="pageTwo" aria-label="الصفحة الثانية">
+      <div class="art-frame page-two-frame">
+        <img class="art page-two-art" src="page2_v2.gif" alt="دعوة حنة نورهان بزخارف وفوانيس وأجواء احتفالية">
+        <!-- Transparent interactive areas sit over the artwork's illustrated buttons. -->
+        <button class="hotspot location-hotspot" id="locationButton" aria-label="بيت العروسة"></button>
+        <button class="hotspot date-hotspot" id="dateButton" aria-label="اليوم والميعاد"></button>
+        <button class="hotspot message-hotspot" id="messageButton" aria-label="كلمة حلوة للعروسة"></button>
+        <button class="hotspot confirm-hotspot" id="confirmButton" aria-label="تأكيد حضور"></button>
+      </div>
+      <button class="back-button" id="backButton" type="button">العودة للغلاف</button>
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="closeModal" aria-label="إغلاق">×</button>
+      <div class="modal-flower">✿</div>
+      <h2 id="modalTitle">نورهان بتقولك ❤️</h2>
+      <p id="modalText"></p>
+      <a class="modal-action hidden" id="modalAction" href="#" target="_blank" rel="noopener">اضغطي هنا</a>
+    </div>
+  </div>
+
+  <script src="script_v2.js"></script>
+</body>
+</html>
